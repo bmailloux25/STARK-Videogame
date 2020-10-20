@@ -342,8 +342,8 @@ GameObject:
   - component: {fileID: 1415424864}
   - component: {fileID: 1415424863}
   - component: {fileID: 1415424862}
-  - component: {fileID: 1415424861}
   - component: {fileID: 1415424865}
+  - component: {fileID: 1415424861}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1415424860}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30ee65c6fe359e249a331af657a82e63, type: 3}
+  m_Script: {fileID: 11500000, guid: 988e514ab2c5d69458ee28d62aa2861e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
