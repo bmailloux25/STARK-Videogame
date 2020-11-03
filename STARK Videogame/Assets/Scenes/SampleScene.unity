@@ -7250,7 +7250,6 @@ GameObject:
   - component: {fileID: 890074035}
   - component: {fileID: 890074034}
   - component: {fileID: 890074032}
-  - component: {fileID: 890074033}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -7270,27 +7269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f4f9ffe8822bc34ba3c51d6b7511b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 890074034}
-  animator: {fileID: 890074033}
---- !u!95 &890074033
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 890074031}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 721bbad5b76f57c4fb90a1a28322ce61, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &890074034
 Rigidbody2D:
   serializedVersion: 4
@@ -7573,7 +7551,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415424860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.64, y: -5.79, z: 0}
+  m_LocalPosition: {x: 3.04, y: -10.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 519420032}
