@@ -4,19 +4,26 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private Player player;
     private float moveSpeed;
     private Vector3 directionToPlayer;
-    private Vector3 localScale;
+    //private Vector3 localScale;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         player = FindObjectOfType(typeof(Player)) as Player;
         moveSpeed = 2f;
-        localScale = transform.localScale;
+        //localScale = transform.localScale;
+    }
+
+    void update()
+    {
+        animator.SetFloat("Horizontal", directionToPlayer.x);
+        animator.SetFloat("Vertical", directionToPlayer.y);
+        animator.SetFloat("Speed", rb.velocity.sqrMagnitude);
     }
 
     private void FixedUpdate()
@@ -30,6 +37,7 @@ public class Enemy : MonoBehaviour
         rb.velocity = new Vector2(directionToPlayer.x, directionToPlayer.y) * moveSpeed;
     }
 
+    /*
     private void LateUpdate()
     {
         if (rb.velocity.x > 0)
@@ -41,4 +49,5 @@ public class Enemy : MonoBehaviour
             transform.localScale = new Vector3(-localScale.x, localScale.y, localScale.z);
         }
     }
+    */
 }
